@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title> page 3: give your input </title>
+        <link rel="stylesheet" href="stylesheets.css"> <!--stylesheet: external CSS-->
+    </head>
+
+    <body>
+        <div class="navbar"> <!--naviagation bar to other pages-->
+            <a href="page 4.html"> where to buy it? </a>
+            <a href="page 3.html"> give your input </a>
+            <a href="page 2.html"> macaron vs macaroon </a>
+            <a href="page 1.html"> what is a macaron? </a>
+            <a href="index.html"> <h2> ~ macaron ~ </h2> </a>
+        </div>
+
+        <div class="content">
+            <h3> what do you think? </h3> <!--heading w/ borders-->
+            <br />
+            <form action="http://www.example.com/review.php" method="get"> <!--idk where to send the infomation to so I used the one from the example-->
+                <fieldset>
+                    <legend> your details </legend> <!--user information with input box-->
+                    <label> Name: 
+                        <input type="text" name="name" size="30" maxlength="100">
+                    </label>
+                    <br />
+                    <label> Email: 
+                        <input type="email" name="email" size="30" maxlength="100">
+                    </label>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend> your answer </legend> 
+                    <p> have you ever had a macacron? <!--multiple choice-->
+                        <br />
+                        <label>
+                            <input type="radio" name="choice" value="yes">
+                            yes
+                        </label>
+                        <label>
+                            <input type="radio" name="choice" value="no">
+                            no </label>
+                        <label>
+                            <input type="radio" name="choice" value="don't remember">
+                            don't remember </label>
+                    </p>
+                    <p> if yes, did you like it? <!--multiple choice-->
+                        <br />
+                        <label>
+                            <input type="radio" name="choice" value="yes">
+                            yes
+                        </label>
+                        <label>
+                            <input type="radio" name="choice" value="no">
+                            no </label>
+                        <label>
+                            <input type="radio" name="choice" value="N/A">
+                            N/A </label>
+                    </p>
+                    <p> 
+                        <label for="fav-dessert"> what is your favorite dessert? </label>" <!--drop down menu with choices-->
+                        <select name="dessert" id="fav-dessert">
+                            <option value="macarons"> macarons </option>
+                            <option value="macaroons"> macaroons </option>
+                            <option value="cake"> cake </option>
+                            <option value="cookies"> cookies </option>
+                            <option value="ice cream"> ice cream </option>
+                            <option value="pie"> pie </option>
+                            <option value="other"> other </option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="comments"> comments: </label> <!--text box-->
+                        <br />
+                        <textarea rows="4" cols="40" id="comments"> </textarea>
+                    </p>
+                    <label>
+                        <input type="checkbox" name="subscribe" checked="checked"> <!--check box-->
+                        " Sign me up for email updates"
+                    </label>
+                    <br />
+                    <input type="submit" value="Submit review"> <!--submit button-->
+                </fieldset>
+            </form>
+            <br />
+            <img src="images/page 3.jpg" alt="macaron pic" title="img from pexels.com"> <!--image for aesthetics-->
+        </div>
+        
+        <footer> <!--quote about desserts-->
+            <br />
+            <h6> "desserts are the fairy tales of the kitchen - a happily ever after to supper" </h6>
+            <h6> terri guillemets </h6>
+            <br />
+        </footer>
+    </body>
+</html>
